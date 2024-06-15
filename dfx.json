@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "bitcoin_addresses_backend": {
+      "candid": "src/bitcoin_addresses_backend/bitcoin_addresses_backend.did",
+      "package": "bitcoin_addresses_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
