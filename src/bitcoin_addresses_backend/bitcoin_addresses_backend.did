@@ -1,3 +1,7 @@
-service : {
-    "greet": (text) -> (text) query;
+type BitcoinAddress = variant { P2wpkh; P2pkh; P2wsh; P2sh; P2tr };
+type BitcoinNetwork = variant { mainnet; regtest; testnet };
+type Key = variant { Dfx; Prod; Test };
+type Result = variant { Ok : text; Err : text };
+service : (Key) -> {
+  generate_address : (BitcoinNetwork, BitcoinAddress, bool) -> (Result);
 }
