@@ -43,8 +43,8 @@ impl Key {
     fn as_str(&self) -> &'static str {
         match self {
             Key::Dfx => "dfx_test_key",
-            Key::Test => "test_key1",
-            Key::Prod => "key1",
+            Key::Test => "test_key_1",
+            Key::Prod => "key_1",
         }
     }
 }

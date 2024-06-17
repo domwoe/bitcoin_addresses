@@ -26,8 +26,8 @@ dfx deploy
 ```
 You'll be asked to provide an initialization argument that defines which threshold master keys are used to derive the addresses.
 - `Dfx` will use `dfx_test_key` which is available on the local replica.
-- `Prod` will use `test_key1` available on ICP mainnet.
-- `Test` will use `key1` available on ICP mainnet.
+- `Prod` will use `test_key_1` available on ICP mainnet.
+- `Test` will use `key_1` available on ICP mainnet.
 
 Once the job is completed, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
 
